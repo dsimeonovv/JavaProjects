@@ -1,0 +1,33 @@
+package santase;
+import java.util.Scanner;
+
+public class RecursiveFibonnaci {
+
+	/**
+	 * @param args
+	 */
+	public static long[] numbers;
+	
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.print("n = ");
+		int n = input.nextInt();
+		
+		numbers = new long[n + 2];
+		numbers[1] = 1;
+		numbers[2] = 2;
+		
+		long result = Fibonnaci(n);
+		System.out.printf("F%d = %d%n", n, result);
+		input.close();
+
+	}
+	
+	public static long Fibonnaci(int n){
+		if(0 == numbers[n]){
+			numbers[n] = Fibonnaci(n - 1) + Fibonnaci(n - 2);
+		}
+		return numbers[n];
+	}
+
+}

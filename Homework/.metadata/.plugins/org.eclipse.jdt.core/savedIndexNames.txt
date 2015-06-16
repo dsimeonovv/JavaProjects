@@ -1,0 +1,1 @@
+INDEX VERSION 1.126+/media/dobromir/EA9EBB0C9EBACFF5/Java/Lesson2/Homework/.metadata/.plugins/org.eclipse.jdt.core
